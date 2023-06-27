@@ -8,15 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    struct BackgroundColor {
+        static let DarkGreen = Color("DarkGreen")
+    }
     var body: some View {
-        VStack {
-            HStack{
-                Text("Foodable")
-                Button("Plus") {
-                    
+        NavigationStack {
+            ZStack{
+                Color("DarkGreen")
+                    .ignoresSafeArea()
+                VStack {
+                    HStack{
+                        Text("\nFoodable ")
+                            .font(.system(size: 50))
+                        NavigationLink(destination: SecondView()) {
+                            Text("\n✚")
+                                .font(.system(size: 50)).foregroundColor(.black)
+                        }
+                    }
+                    Text("All Recipes")
                 }
             }
-            Text("All Recipies")
         }
     }
 }

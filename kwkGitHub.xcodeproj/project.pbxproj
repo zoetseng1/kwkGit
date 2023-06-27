@@ -11,7 +11,7 @@
 		1B4ABC522A49D691005501FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4ABC512A49D691005501FB /* ContentView.swift */; };
 		1B4ABC542A49D694005501FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4ABC532A49D694005501FB /* Assets.xcassets */; };
 		1B4ABC572A49D694005501FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4ABC562A49D694005501FB /* Preview Assets.xcassets */; };
-		1BAC581B2A4B628F00E81F27 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC581A2A4B628F00E81F27 /* SecondView.swift */; };
+		1BAC581D2A4B8A7800E81F27 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC581C2A4B8A7800E81F27 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		1B4ABC512A49D691005501FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B4ABC532A49D694005501FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B4ABC562A49D694005501FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1BAC581A2A4B628F00E81F27 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		1BAC581C2A4B8A7800E81F27 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 		1B4ABC432A49D691005501FB = {
 			isa = PBXGroup;
 			children = (
-				1BAC581A2A4B628F00E81F27 /* SecondView.swift */,
+				1BAC581C2A4B8A7800E81F27 /* SecondView.swift */,
 				1B4ABC4E2A49D691005501FB /* kwkGitHub */,
 				1B4ABC4D2A49D691005501FB /* Products */,
 			);
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BAC581B2A4B628F00E81F27 /* SecondView.swift in Sources */,
+				1BAC581D2A4B8A7800E81F27 /* SecondView.swift in Sources */,
 				1B4ABC522A49D691005501FB /* ContentView.swift in Sources */,
 				1B4ABC502A49D691005501FB /* kwkGitHubApp.swift in Sources */,
 			);

@@ -10,6 +10,9 @@ import SwiftUI
 struct SecondView: View {
     @State private var recipeTitle: String = ""
     @State private var rating: String = ""
+    @State private var ingredients: String = ""
+    @State private var directions: String = ""
+
     var body: some View {
         VStack {
             HStack{
@@ -24,15 +27,35 @@ struct SecondView: View {
                 }
             }
             .padding(30)
-            Text("Rating")
-            HStack (spacing: -400){
-                TextField(
-                    "_",
-                    text: $rating
-                )
-                .padding(182.5)
-                Text(" /5")
-                    .padding(182.5)
+            TabView {
+                List {
+                    Text("Ingredients")
+                        .font(.system(size:30))
+                    ZStack {
+                        TextEditor(text: $ingredients)
+                            .disableAutocorrection(true)
+                        Text(ingredients).opacity(0).padding(.all, 8)
+                    }
+                    .shadow(radius: 1)
+                }
+                    .tabItem {
+                        Label("Ingredients", systemImage: "pencil")
+                    }
+                
+                List {
+                    Text("Directions")
+                        .font(.system(size:30))
+                    ZStack {
+                        TextEditor(text: $directions)
+                            .disableAutocorrection(true)
+                        Text(directions).opacity(0).padding(.all, 8)
+                    }
+                    .shadow(radius: 1)
+                }
+                    .tabItem {
+                        Label("Directions", systemImage: "square.and.pencil")
+                    }
+
             }
         }
     }

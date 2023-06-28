@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct SecondView: View {
+    @State private var recipeTitle: String = ""
+    @State private var rating: String = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack{
+                TextField(
+                    "Recipe Title",
+                    text: $recipeTitle
+                )
+                    .disableAutocorrection(true)
+                    .textFieldStyle(.roundedBorder)
+                Button("Save") {
+                    
+                }
+            }
+            .padding(30)
+            Text("Rating")
+            HStack (spacing: -400){
+                TextField(
+                    "_",
+                    text: $rating
+                )
+                .padding(182.5)
+                Text(" /5")
+                    .padding(182.5)
+            }
+        }
     }
 }
 
